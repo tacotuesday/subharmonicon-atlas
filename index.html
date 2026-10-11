@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171b19" />
+    <meta name="description" content="Explore the rhythms, pitches, and control patches of the Moog Subharmonicon in six interactive lanes." />
+    <title>Subharmonicon — Rhythm & Pitch Explorer</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  </head>
+  <body>
+    <div id="root"><main style="max-width:600px;margin:80px auto;padding:24px;font:16px/1.6 system-ui;color:#242d2a"><h1>Subharmonicon Explorer</h1><p>Opening the app…</p><p>If you have not built it yet, run <code>npm ci</code> and <code>npm run build</code>, then reopen this file. For development, run <code>npm run dev</code> and open the address it prints.</p><a href="./dist/standalone.html">Open the standalone app</a></main></div>
+    <script id="local-file-launcher">
+      if (location.protocol === 'file:') {
+        const standalone = new URL('./dist/standalone.html', location.href);
+        standalone.hash = location.hash;
+        location.replace(standalone.href);
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
